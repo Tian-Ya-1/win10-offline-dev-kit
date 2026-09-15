@@ -8,7 +8,11 @@
 - Python 3.11.9 x64
 - MinGW-w64：GCC 14.3.0、GDB 16.3、UCRT、POSIX、SEH、Win64
 - VS Code C/C++、Python、Pylance、Python Debugger、Python Environments 插件
+- Code Runner、Markdown All in One、LaTeX Workshop 插件
+- Jupyter 及其 Keymap、Notebook Renderers、Cell Tags、Slide Show 配套插件
 - MinGW 安装、VSIX 批量安装和环境检查脚本
+
+LaTeX Workshop 不包含 LaTeX 编译器；Jupyter 插件也不包含 Python 内的 Jupyter 内核。需要生成 LaTeX PDF 或运行 `.ipynb` 时，还需另行准备相应运行环境。
 
 ## 使用顺序
 
