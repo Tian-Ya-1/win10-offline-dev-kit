@@ -34,7 +34,15 @@ $installOrder = @(
     "ms-python.python.vsix",
     "ms-python.debugpy.vsix",
     "ms-python.vscode-python-envs.vsix",
-    "ms-python.vscode-pylance.vsix"
+    "ms-python.vscode-pylance.vsix",
+    "formulahendry.code-runner.vsix",
+    "yzhang.markdown-all-in-one.vsix",
+    "James-Yu.latex-workshop.vsix",
+    "ms-toolsai.jupyter-keymap.vsix",
+    "ms-toolsai.jupyter-renderers.vsix",
+    "ms-toolsai.vscode-jupyter-cell-tags.vsix",
+    "ms-toolsai.vscode-jupyter-slideshow.vsix",
+    "ms-toolsai.jupyter.vsix"
 )
 
 foreach ($fileName in $installOrder) {
