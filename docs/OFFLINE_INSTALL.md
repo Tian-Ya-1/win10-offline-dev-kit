@@ -5,7 +5,8 @@
 1. 按 `Win + R`，输入 `winver`。
 2. 确认系统为 Windows 10 20H2、内部版本 19042.804。
 3. 打开“设置 → 系统 → 关于”，确认“系统类型”为 64 位操作系统。
-4. 系统盘建议至少保留 5 GB 空闲空间。
+4. 系统盘建议至少保留 15 GB 空闲空间用于完整安装 TeX Live。
+5. U 盘建议至少 16 GB，并使用 exFAT 或 NTFS；FAT32 不能存放超过 4 GB 的 ISO 文件。
 
 ## 1. 安装 VS Code
 
@@ -71,10 +72,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\03-install-vsix.ps
 说明：
 
 - Markdown All in One 可以直接使用。
-- LaTeX Workshop 只提供编辑器集成，编译 PDF 还需要单独安装 TeX Live 或 MiKTeX。
+- LaTeX Workshop 需要配合本工具包中的 TeX Live 2026 使用。
 - Jupyter 插件支持 `.ipynb`，执行 Python 单元格还需要在 Python 环境中安装 Jupyter 内核。
 
-## 5. 配置 C/C++ 工程
+## 5. 安装 TeX Live 2026
+
+1. 双击 `offline-bundle\installers\texlive2026.iso`，Windows 会将其挂载为虚拟 DVD。
+2. 打开虚拟 DVD，双击 `install-tl-windows.bat`。
+3. 保持默认的完整安装方案并开始安装；安装时间可能较长。
+4. 完成后关闭并重新打开 PowerShell和 VS Code。
+5. 在 PowerShell 中执行：
+
+```powershell
+pdflatex --version
+xelatex --version
+latexmk -v
+```
+
+三个命令均能显示版本后，LaTeX Workshop 就可以调用 TeX Live 编译 `.tex` 文件。
+
+## 6. 配置 C/C++ 工程
 
 在自己的 C/C++ 工程根目录建立 `.vscode` 文件夹，将下列三个模板复制进去：
 
@@ -90,14 +107,14 @@ configs\launch.json
 - `F5`：调试
 - `Ctrl+F5`：运行但不调试
 
-## 6. 配置 Python
+## 7. 配置 Python
 
 1. 在 VS Code 中按 `Ctrl+Shift+P`。
 2. 输入 `Python: Select Interpreter`。
 3. 选择刚安装的 Python 3.11.9。
 4. 打开 `.py` 文件，点击右上角运行按钮。
 
-## 7. 最终检查
+## 8. 最终检查
 
 运行：
 
@@ -105,7 +122,7 @@ configs\launch.json
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\04-verify-environment.ps1
 ```
 
-脚本会检查版本、编译并运行一个最小 C++ 程序，并在仓库根目录生成 `verification-report.txt`。
+脚本会检查版本、编译并运行一个最小 C++ 程序，同时检查 TeX Live 命令，并在仓库根目录生成 `verification-report.txt`。
 
 ## 常见问题
 
