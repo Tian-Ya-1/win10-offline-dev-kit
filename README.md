@@ -7,7 +7,7 @@
 - Visual Studio Code 最新稳定版，Windows x64 User Installer
 - Python 3.11.9 x64
 - MinGW-w64：GCC 14.3.0、GDB 16.3、UCRT、POSIX、SEH、Win64
-- VS Code 简体中文、C/C++、Python、Pylance、Python Debugger、Python Environments 插件
+- VS Code C/C++、Python、Pylance、Python Debugger、Python Environments 插件
 - MinGW 安装、VSIX 批量安装和环境检查脚本
 
 ## 使用顺序
