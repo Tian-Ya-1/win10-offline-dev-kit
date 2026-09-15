@@ -68,6 +68,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\03-install-vsix.ps
 
 也可以在 VS Code 中按 `Ctrl+Shift+P`，执行 `Extensions: Install from VSIX`，逐个选择 `offline-bundle\vsix` 内的文件。
 
+说明：
+
+- Markdown All in One 可以直接使用。
+- LaTeX Workshop 只提供编辑器集成，编译 PDF 还需要单独安装 TeX Live 或 MiKTeX。
+- Jupyter 插件支持 `.ipynb`，执行 Python 单元格还需要在 Python 环境中安装 Jupyter 内核。
+
 ## 5. 配置 C/C++ 工程
 
 在自己的 C/C++ 工程根目录建立 `.vscode` 文件夹，将下列三个模板复制进去：
