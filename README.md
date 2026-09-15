@@ -9,11 +9,8 @@
 - MinGW-w64：GCC 14.3.0、GDB 16.3、UCRT、POSIX、SEH、Win64
 - VS Code C/C++、Python、Pylance、Python Debugger、Python Environments 插件
 - Code Runner、Markdown All in One、LaTeX Workshop 插件
-- Jupyter 及其 Keymap、Notebook Renderers、Cell Tags、Slide Show 配套插件
 - TeX Live 2026 完整离线 ISO 及官方 SHA-512 校验
 - MinGW 安装、VSIX 批量安装和环境检查脚本
-
-Jupyter 插件不包含 Python 内的 Jupyter 内核；运行 `.ipynb` 时还需在 Python 环境中安装相应内核。
 
 ## 使用顺序
 
