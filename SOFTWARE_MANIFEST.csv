@@ -2,6 +2,7 @@ category,name,recommended_version,architecture,source,destination,notes
 Editor,Visual Studio Code,Latest Stable,x64,https://update.code.visualstudio.com/latest/win32-x64-user/stable,offline-bundle/installers/VSCodeUserSetup-x64.exe,Windows User Installer
 Interpreter,Python,3.11.9,x64,https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe,offline-bundle/installers/python-3.11.9-amd64.exe,Python interpreter
 Compiler,WinLibs MinGW-w64,GCC 14.3.0 + GDB 16.3,x64,https://github.com/brechtsanders/winlibs_mingw/releases/tag/14.3.0posix-12.0.0-ucrt-r1,offline-bundle/installers/winlibs-x86_64-posix-seh-gcc-14.3.0-mingw-w64ucrt-12.0.0-r1.zip,UCRT POSIX SEH
+Typesetting,TeX Live,2026,Windows x64,https://ctan.org/tex-archive/systems/texlive/Images,offline-bundle/installers/texlive2026.iso,Full offline ISO about 6.3 GiB
 VSIX,C/C++,Latest,x64,https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools,offline-bundle/vsix/ms-vscode.cpptools.vsix,Required for C and C++ editing and debugging
 VSIX,Python,Latest,x64,https://marketplace.visualstudio.com/items?itemName=ms-python.python,offline-bundle/vsix/ms-python.python.vsix,Required for Python integration
 VSIX,Pylance,Latest,x64,https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance,offline-bundle/vsix/ms-python.vscode-pylance.vsix,Python completion and analysis
