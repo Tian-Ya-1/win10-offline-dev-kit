@@ -30,7 +30,6 @@ if ([string]::IsNullOrWhiteSpace($codePath)) {
 }
 
 $installOrder = @(
-    "MS-CEINTL.vscode-language-pack-zh-hans.vsix",
     "ms-vscode.cpptools.vsix",
     "ms-python.python.vsix",
     "ms-python.debugpy.vsix",
