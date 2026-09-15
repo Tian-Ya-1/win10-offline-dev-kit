@@ -11,8 +11,3 @@ VSIX,Python Environments,Latest,x64,https://marketplace.visualstudio.com/items?i
 VSIX,Code Runner,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner,offline-bundle/vsix/formulahendry.code-runner.vsix,Run code from the editor
 VSIX,Markdown All in One,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one,offline-bundle/vsix/yzhang.markdown-all-in-one.vsix,Markdown authoring tools
 VSIX,LaTeX Workshop,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop,offline-bundle/vsix/James-Yu.latex-workshop.vsix,Requires a separate TeX distribution to compile PDF
-VSIX,Jupyter Keymap,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-keymap,offline-bundle/vsix/ms-toolsai.jupyter-keymap.vsix,Jupyter companion extension
-VSIX,Jupyter Notebook Renderers,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers,offline-bundle/vsix/ms-toolsai.jupyter-renderers.vsix,Jupyter output renderers
-VSIX,Jupyter Cell Tags,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-cell-tags,offline-bundle/vsix/ms-toolsai.vscode-jupyter-cell-tags.vsix,Jupyter companion extension
-VSIX,Jupyter Slide Show,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-slideshow,offline-bundle/vsix/ms-toolsai.vscode-jupyter-slideshow.vsix,Jupyter companion extension
-VSIX,Jupyter,Latest,Compatible,https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter,offline-bundle/vsix/ms-toolsai.jupyter.vsix,Requires a Python Jupyter kernel to execute notebooks
