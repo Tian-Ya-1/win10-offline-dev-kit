@@ -73,7 +73,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\03-install-vsix.ps
 
 - Markdown All in One 可以直接使用。
 - LaTeX Workshop 需要配合本工具包中的 TeX Live 2026 使用。
-- Jupyter 插件支持 `.ipynb`，执行 Python 单元格还需要在 Python 环境中安装 Jupyter 内核。
 
 ## 5. 安装 TeX Live 2026
 
