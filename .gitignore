@@ -1,0 +1,12 @@
+# Downloaded installers and extension packages are intentionally not committed.
+offline-bundle/**
+!offline-bundle/README.md
+
+# Local reports
+verification-report.txt
+*.log
+
+# Editor and OS files
+.vscode/
+Thumbs.db
+Desktop.ini
