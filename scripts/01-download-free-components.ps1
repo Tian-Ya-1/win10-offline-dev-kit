@@ -65,12 +65,6 @@ $downloads = @(
         MinimumBytes = 240000000
     },
     [pscustomobject]@{
-        Name = "VS Code Chinese Language Pack"
-        Url = "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MS-CEINTL/vsextensions/vscode-language-pack-zh-hans/latest/vspackage?targetPlatform=win32-x64"
-        Path = Join-Path $vsixDir "MS-CEINTL.vscode-language-pack-zh-hans.vsix"
-        MinimumBytes = 100000
-    },
-    [pscustomobject]@{
         Name = "VS Code C/C++"
         Url = "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-vscode/vsextensions/cpptools/latest/vspackage?targetPlatform=win32-x64"
         Path = Join-Path $vsixDir "ms-vscode.cpptools.vsix"
