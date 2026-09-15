@@ -130,10 +130,9 @@ $infoFile = Join-Path $Destination "download-info.txt"
     "Computer: $env:COMPUTERNAME"
     "Files: $($downloads.Count)"
     "MinGW publisher SHA-256: verified"
-    "Commercial installers: follow docs\COMMERCIAL_SOFTWARE.md"
 ) | Set-Content -Encoding UTF8 -Path $infoFile
 
 Write-Host ""
 Write-Host "Download completed: $Destination"
 Write-Host "Checksums: $hashFile"
-Write-Host "Next: prepare Office, MATLAB and Adobe according to docs\COMMERCIAL_SOFTWARE.md"
+Write-Host "Next: copy this repository and offline-bundle to the offline computer"
