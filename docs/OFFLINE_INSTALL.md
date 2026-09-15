@@ -5,7 +5,7 @@
 1. 按 `Win + R`，输入 `winver`。
 2. 确认系统为 Windows 10 20H2、内部版本 19042.804。
 3. 打开“设置 → 系统 → 关于”，确认“系统类型”为 64 位操作系统。
-4. 系统盘建议至少保留 60 GB；如安装较多 MATLAB 工具箱，建议保留 100 GB。
+4. 系统盘建议至少保留 5 GB 空闲空间。
 
 ## 1. 安装 VS Code
 
@@ -67,8 +67,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\03-install-vsix.ps
 ```
 
 也可以在 VS Code 中按 `Ctrl+Shift+P`，执行 `Extensions: Install from VSIX`，逐个选择 `offline-bundle\vsix` 内的文件。
-
-MATLAB 使用独立软件，因此没有准备 MATLAB VS Code 插件。
 
 ## 5. 配置 C/C++ 工程
 
