@@ -10,9 +10,10 @@
 - VS Code C/C++、Python、Pylance、Python Debugger、Python Environments 插件
 - Code Runner、Markdown All in One、LaTeX Workshop 插件
 - Jupyter 及其 Keymap、Notebook Renderers、Cell Tags、Slide Show 配套插件
+- TeX Live 2026 完整离线 ISO 及官方 SHA-512 校验
 - MinGW 安装、VSIX 批量安装和环境检查脚本
 
-LaTeX Workshop 不包含 LaTeX 编译器；Jupyter 插件也不包含 Python 内的 Jupyter 内核。需要生成 LaTeX PDF 或运行 `.ipynb` 时，还需另行准备相应运行环境。
+Jupyter 插件不包含 Python 内的 Jupyter 内核；运行 `.ipynb` 时还需在 Python 环境中安装相应内核。
 
 ## 使用顺序
 
@@ -26,11 +27,19 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\01-download-free-c
 
 文件会保存到 `offline-bundle`。脚本完成后还会生成 `SHA256SUMS.txt`。
 
-### 2. 复制到 U 盘
+### 2. 下载 TeX Live 2026 完整离线镜像
 
-将整个仓库目录连同生成的 `offline-bundle` 一起复制到 U 盘，建议至少预留 2 GB。
+TeX Live ISO 约 6.3 GiB，使用单独脚本下载并校验官方 SHA-512：
 
-### 3. 在离线电脑安装
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\05-download-texlive.ps1
+```
+
+### 3. 复制到 U 盘
+
+将整个仓库目录连同生成的 `offline-bundle` 一起复制到 U 盘。建议使用至少 16 GB 的 U 盘，并格式化为 exFAT 或 NTFS；FAT32 无法保存超过 4 GB 的 TeX Live ISO。
+
+### 4. 在离线电脑安装
 
 推荐顺序：
 
@@ -48,7 +57,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\02-install-mingw.p
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\03-install-vsix.ps1
 ```
 
-5. 运行检查脚本：
+5. 双击挂载 `offline-bundle\installers\texlive2026.iso`，运行其中的 `install-tl-windows.bat`。
+6. 运行检查脚本：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\04-verify-environment.ps1
@@ -69,5 +79,6 @@ offline-bundle/  下载脚本生成的安装文件和 VSIX 插件
 
 - 下载脚本只使用官方来源或项目作者的 GitHub Release。
 - MinGW 压缩包使用发布者提供的 SHA-256 固定值校验。
+- TeX Live ISO 使用 CTAN 提供的官方 SHA-512 校验。
 - 其他下载会生成本地 SHA-256 清单，便于检查 U 盘复制前后文件是否一致。
 - Windows 10 20H2 已停止安全维护；若电脑联网，建议升级操作系统后再长期使用。
