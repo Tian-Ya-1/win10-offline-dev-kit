@@ -47,6 +47,9 @@ $gppOk = Check-Command -DisplayName "G++" -CommandName "g++" -VersionArguments @
 $gdbOk = Check-Command -DisplayName "GDB" -CommandName "gdb" -VersionArguments @("--version")
 $pythonOk = Check-Command -DisplayName "Python" -CommandName "python" -VersionArguments @("--version")
 $codeOk = Check-Command -DisplayName "VS Code" -CommandName "code" -VersionArguments @("--version")
+$pdfLatexOk = Check-Command -DisplayName "pdfLaTeX" -CommandName "pdflatex" -VersionArguments @("--version")
+$xeLatexOk = Check-Command -DisplayName "XeLaTeX" -CommandName "xelatex" -VersionArguments @("--version")
+$latexmkOk = Check-Command -DisplayName "latexmk" -CommandName "latexmk" -VersionArguments @("-v")
 
 if ($gppOk) {
     $testRoot = Join-Path $env:TEMP "win10-offline-dev-kit-test"
