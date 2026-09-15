@@ -157,6 +157,54 @@ $vsixDownloads = @(
         ExtensionId = "ms-python.vscode-python-envs"
         Path = Join-Path $vsixDir "ms-python.vscode-python-envs.vsix"
         MinimumBytes = 100000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Code Runner"
+        ExtensionId = "formulahendry.code-runner"
+        Path = Join-Path $vsixDir "formulahendry.code-runner.vsix"
+        MinimumBytes = 100000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Markdown All in One"
+        ExtensionId = "yzhang.markdown-all-in-one"
+        Path = Join-Path $vsixDir "yzhang.markdown-all-in-one.vsix"
+        MinimumBytes = 100000
+    },
+    [pscustomobject]@{
+        Name = "VS Code LaTeX Workshop"
+        ExtensionId = "James-Yu.latex-workshop"
+        Path = Join-Path $vsixDir "James-Yu.latex-workshop.vsix"
+        MinimumBytes = 500000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Jupyter Keymap"
+        ExtensionId = "ms-toolsai.jupyter-keymap"
+        Path = Join-Path $vsixDir "ms-toolsai.jupyter-keymap.vsix"
+        MinimumBytes = 20000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Jupyter Notebook Renderers"
+        ExtensionId = "ms-toolsai.jupyter-renderers"
+        Path = Join-Path $vsixDir "ms-toolsai.jupyter-renderers.vsix"
+        MinimumBytes = 100000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Jupyter Cell Tags"
+        ExtensionId = "ms-toolsai.vscode-jupyter-cell-tags"
+        Path = Join-Path $vsixDir "ms-toolsai.vscode-jupyter-cell-tags.vsix"
+        MinimumBytes = 20000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Jupyter Slide Show"
+        ExtensionId = "ms-toolsai.vscode-jupyter-slideshow"
+        Path = Join-Path $vsixDir "ms-toolsai.vscode-jupyter-slideshow.vsix"
+        MinimumBytes = 20000
+    },
+    [pscustomobject]@{
+        Name = "VS Code Jupyter"
+        ExtensionId = "ms-toolsai.jupyter"
+        Path = Join-Path $vsixDir "ms-toolsai.jupyter.vsix"
+        MinimumBytes = 1000000
     }
 )
 
